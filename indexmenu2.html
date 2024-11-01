@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENU2</title>
+    <link rel="stylesheet" href="menu2estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
+        integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="header">
+        <ul class="nav">
+            <caption><h1>DELTRON <br>
+                Usted, la Tecnologia y Nosotros
+            </h1></caption>
+            <br>
+            <br>
+            <li><a href="">INICIO</a></li>
+            <li><a href="">GRUPO DELTON</a></li>
+            <li><a href="">SUCURSALES</a></li>
+            <li><a href="">CATALOGO</a>
+                <ul>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/listaprodnw.php">Lista de precios</a></li>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/items/postsql.php?&pmarca=todo">Productos por marca</a></li>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/items/postsql.php">Productos por tipo</a></li>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=MBD">Guía de motherboards</a></li>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=MBD">Guías de Tablets</a></li>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=NBK">Guía de Notebooks</a></li>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=HDES&STK=1">Guía de SSD</a></li>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador.php?GL=MEM&STK=1">Guía de Memorias RAM</a></li>
+                    <li><a href="https://www.deltron.com.pe/modulos/productos/items/ctBuscador/templates/buscador_web_v1.php">Buscador de Productos</a></li>
+                    <li><a href="https://www.deltron.com.pe/include/catalogo.php">Descargar Catálogos</a></li>
+                </ul>
+            </li>
+            <li><a href="">DISTRIBUIDORES</a>
+                <ul>
+                    <li><a href="">Inscripción</a></li>
+                    <li><a href="">Extranet</a></li>
+                </ul>
+            </li>
+            <li><a href="">SERVICIO TÉCNICO</a></li>
+        </ul>
+        <div class="cajabuscar">
+            <form method="get" id="buscarform" onsubmit="return redirectToSearch()">
+                <fieldset>
+                    <input type="text" id="s" name="q" value="" placeholder="Buscar" required />
+                    <input class="button" type="submit" value="Buscar" />
+                    <i class="search"></i>
+                </fieldset>
+            </form>
+        </div>
+        
+        <script>
+        function redirectToSearch() {
+            const input = document.getElementById('s').value.trim();
+            if (input === "") {
+                alert("Por favor, ingrese un término de búsqueda.");
+                return false;
+            }
+        
+            const searchUrl = `https://www.sercoplus.com/busqueda?q=${encodeURIComponent(input)}`;
+            window.location.href = searchUrl;
+            return false;
+        }
+        </script>
+    
+    <div class="contenido">
+        <div class="articulo">
+            <div>
+                <h1>MSI Tarjeta gráfica GeForce RTX 4070</h1> <br>
+                <a href="https://www.memorykings.pe/producto/349677/geforce-rtx-4070-12gb-192-bit-asus-proart-oc">
+                    <img src="deltron/rtx4070.jpg" alt=""> <br> <br>
+                </a>
+                <label for="">$840.00 o S/3,183.50</label>
+                <p>
+                    La NVIDIA RTX 4070 es una tarjeta gráfica de la serie 40, basada en la arquitectura Ada Lovelace. Ofrece un excelente rendimiento en juegos 4K y es ideal para trazado de rayos y DLSS 3.0. Tiene 12 GB de memoria GDDR6X, conectividad HDMI 2.1 y DisplayPort 1.4a, y un TDP eficiente. Es perfecta para jugadores que buscan alto rendimiento en 1440p y 4K, así como para creadores de contenido.
+                </p>
+            </div>
+        </div>
+        <div class="articulo">
+            <div>
+                <h1>Procesadores Intel® Core™ i5</h1> <br>
+                <a href="https://www.infotec.com.pe/procesadores-intel/18157-procesador-intel-core-i5-10400f-29ghz-12mb-bx8070110400f-lga-1200-5032037187077.html">
+                    <img src="deltron/intel5.webp" alt=""> <br> <br>
+                </a>
+                <label for="">$132.74 o S/500.00</label>
+                <p>
+                    El Intel Core i5 es una línea de procesadores de gama media que ofrece un buen equilibrio entre rendimiento y eficiencia. Típicamente cuenta con 4 a 6 núcleos, soporta Hyper-Threading, y es ideal para tareas cotidianas y juegos ligeros. Incluye gráficos integrados y tecnologías como Turbo Boost, lo que mejora su rendimiento en tareas exigentes. Es una opción popular por su relación calidad-precio.
+                </p>
+            </div>
+        </div>
+        <div class="articulo">
+            <div>
+                <h1>ASUS ROG Swift OLED</h1> <br>
+                <a href="https://www.sercoplus.com/monitores-gaming/17085-monitor-asus-rog-swift-oled-pg27aqdm-27.html#:~:text=%24%20999%2C90%20(impuestos%20excl.)">
+                    <img src="deltron/monitorasus.jpg" alt=""> <br> <br>
+                </a>
+                <label for="">$999,90 o S/ 3.809,62</label>
+                <p>
+                    El ASUS ROG Swift OLED es un monitor de alta gama que combina un panel OLED con resoluciones 4K y tamaños de hasta 32 pulgadas, ofreciendo colores vibrantes y negros profundos. Con una alta frecuencia de actualización de hasta 240 Hz y un bajo tiempo de respuesta, proporciona una experiencia visual fluida y nítida, ideal para gamers y creadores de contenido. Además, es compatible con tecnologías como G-SYNC, lo que mejora aún más la calidad del juego al eliminar el desgarro de imagen.
+                </p>
+            </div>
+        </div>
+        <div class="articulo">
+            <div>
+                <h1>MSI Clutch GM08</h1> <br>
+                <a href="https://compusystemperu.com/shop/perifericos/mouse/mouse-gamer-msi-clutch-gm08/">
+                    <img src="deltron/mouse.webp" alt=""> <br> <br>
+                </a>
+                <label for="">$22.61 o S/85.16</label>
+                <p>
+                    El MSI Clutch GM08 es un mouse gamer diseñado para brindar un rendimiento óptimo en juegos. Con un diseño ergonómico y una alta precisión, es ideal para largas sesiones de juego. Ofrece múltiples configuraciones de DPI y retroiluminación RGB, permitiendo personalizar la experiencia de usuario.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <ul class="redes">
+        <button class="btn-share">
+            <span>Compartir</span>
+            <span>
+                <i class="fas fa-share-alt"></i>
+            </span>
+            <ul>
+                <li><a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://es.pinterest.com/"><i class="fab fa-pinterest"></i></a></li>
+                <li><a href="https://pe.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://www.instagram.com/?hl=es"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://web.telegram.org/k/"><i class="fab fa-telegram"></i></a></li>
+                
+            </ul>
+        </button>
+    </ul>
+
+    <div id="footer">
+        <div class="footer-content">
+            <p>&copy; 2024. Todos los derechos reservados.</p>
+            <p><strong>IMPORTANTE</strong><br>
+                Contamos con un programa de seguridad OEA<br>
+                Código de Ética y Conducta<br>
+                Manual de Cumplimiento (Compliance)<br>
+                Procedimiento de Denuncia e Investigación<br>
+                Reglamento Interno de Trabajo<br>
+                Formulario de Denuncias<br>
+            </p>
+            <p><strong>COMUNÍQUESE CON NOSOTROS</strong><br>
+                Ventas: <a href="mailto:infodeltron@deltron.com.pe">infodeltron@deltron.com.pe</a><br>
+                Informes: <a href="mailto:infodeltron@deltron.com.pe">infodeltron@deltron.com.pe</a><br>
+                Servicio Técnico: <a href="mailto:soporte@deltron.com.pe">soporte@deltron.com.pe</a><br>
+            </p>
+            <p>
+                <a href="https://img.deltron.com.pe/images/temp_imgs/img_sistemas/manual_de_compliance_2023.pdf">Política de privacidad</a> | 
+                <a href="terminos.html">Términos de servicio</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
